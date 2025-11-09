@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Shaik Abdullah</title>
+  <meta name="description" content="Personal portfolio showcasing projects, skills and contact information." />
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <header>
+        <div class="brand">Shaik Abdullah <span class="muted">• portfolio</span></div>
+        <nav>
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <button class="hamburger" id="nav-toggle" aria-label="Open menu">☰</button>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="intro">
+            <p class="muted">Hello — I'm</p>
+            <h1 class="fade-up">Shaik Abdullah — Frontend &amp; MERN developer</h1>
+            <p>I'm a developer who builds accessible, responsive web apps. I specialize 
+                in creating clean user interfaces and crafting delightful interactions 
+                with HTML, CSS ,JavaScript, React JS, Node JS and Exprees JS.</p>
+            <div class="cta-row">
+              <a class="btn" href="#contact">Work with me</a>
+              <a class="muted" href="#projects">See projects</a>
+            </div>
+
+            <div style="margin-top:1.25rem">
+              <small class="muted">Currently Looking for job opportunities.</small>
+            </div>
+          </div>
+
+          <aside class="profile-card" aria-hidden="false">
+            <img class="avatar" src="profile.jpeg" alt="Your avatar">
+            <h3 style="margin-top:.65rem">Shaik Abdullah</h3>
+            <div class="muted">Frontend • MERN Stack  </div>
+            <div class="tags" style="margin-top:.6rem">
+              <span class="tag">React</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Node.JS</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <div style="margin-top:1rem" class="center">
+              <a class="muted" href="#contact">Say hi 👋</a>
+            </div>
+          </aside>
+        </section>
+
+        <section id="about">
+          <div class="section-title">
+            <h2>About</h2>
+            <small class="muted">A short bio</small>
+          </div>
+          <p class="muted">I build web applications using modern tools and best practices. 
+            I enjoy turning ideas into production-ready products, writing clean code, and 
+            improving user experiences. Outside of coding, I like reading, design, and building 
+            side projects.</p>
+        </section>
+
+        <section id="projects">
+          <div class="section-title">
+            <h2>Projects</h2>
+            <small class="muted">Featured work</small>
+          </div>
+          <div class="projects-grid">
+            <article class="project" data-title="Cafe Order System" 
+            data-desc="An interactive Cafe Order System Website build using HTML,CSS,JavaScript and React, featuring a dynamic menu
+            , real-time order management, and a intuitive user interface " data-image="cafe-order-system.png" tabindex="0">
+              <div>
+                <h3>Cafe Order System</h3>
+                <p class="muted">HTML • CSS • JavaScript • React JS</p>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.75rem">
+                <span class="muted" style="font-size:.9rem"><a href="https://bros-cafe.netlify.app/">Click Me</a></span>
+                <small class="muted">2025</small>
+              </div>
+            </article>
+
+            <article class="project" data-title="Portfolio Website" data-desc="This portfolio site built with HTML/CSS/JS.
+             Responsive design, accessible components and smooth animations." data-image="portfolio.png" tabindex="0">
+              <div>
+                <h3>Portfolio Website</h3>
+                <p class="muted">HTML • CSS • JavaScript</p>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.75rem">
+                <span class="muted"><a href="https://shaikabdullah.netlify.app/">Click Me</a></span>
+                <small class="muted">2025</small>
+              </div>
+            </article>
+
+            <article class="project" data-title="Weather Dashboard" data-desc="A weather dashboard using open APIs and localStorage for preferences. Mobile-first design." data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=..." tabindex="0">
+              <div>
+                <h3>Weather Dashboard</h3>
+                <p class="muted">React JS • APIs</p>
+              </div>
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-top:.75rem">
+                <span class="muted">Demo</span>
+                <small class="muted">2025</small>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="skills">
+          <div class="section-title">
+            <h2>Skills</h2>
+            <small class="muted">Technologies & tools</small>
+          </div>
+          <div class="skills">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">SQL</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+            <span class="skill">MongoDB</span>
+            <span class="skill">Exprees.js</span>
+            <span class="skill">Git</span>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <small class="muted">Send a message</small>
+          </div>
+          <form id="contact-form" onsubmit="return false;">
+            <input id="name" name="name" placeholder="Your name" required />
+            <input id="email" name="email" placeholder="Your email" type="email" required />
+            <input id="subject" name="subject" placeholder="Subject" />
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+            <div class="foot">
+              <small class="muted">I'll reply within a few hours.</small>
+              <div style="display:flex;gap:.5rem">
+                <button class="btn" id="send-btn"><a href="mailto:hsshaikabdullah@gmail.com">Send</a></button>
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <footer>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+            <div class="muted">© 2025 Shaik Abdullah. All rights reserved</div>
+            <div style="display:flex;gap:.6rem;align-items:center">
+              <a class="muted" href="https://github.com/SHAIKABDULLAH2005">GitHub</a>
+              <a class="muted" href="https://www.linkedin.com/in/shaik-abdullah-60028a297/">LinkedIn</a>
+              <a class="muted" href="https://www.instagram.com/yaa.its_xbdullx_/">Instagram</a>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Modal for project details -->
+  <div class="modal" id="modal" role="dialog" aria-hidden="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">
+        <h3 id="modal-title">Project title</h3>
+        <button id="modal-close" aria-label="Close">✕</button>
+      </div>
+      <div class="modal-grid">
+        <div>
+          <img id="modal-image" src="" alt="Project image">
+          <p id="modal-desc" style="margin-top:.6rem;color:var(--muted)"></p>
+        </div>
+        <aside style="background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.03)">
+          <h4 style="margin-top:0">Quick links</h4>
+          <h5>Click the Click Me button to visit my work</h5>
+          <p class="muted" id="modal-links"></p>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+   
+</body>
+</html>
